@@ -2,7 +2,7 @@
 # require "pry"
 
 def generate_num
-  num = rand(5) + 1
+  num = rand(1..6)
   num
 end
 
@@ -17,6 +17,7 @@ end
 def check_num(number, input)
   numberr = number.to_s
   inputt = input.to_s
+  
   if inputt == numberr
     puts "/You guessed the correct number!/"
   elsif inputt == "exit"
